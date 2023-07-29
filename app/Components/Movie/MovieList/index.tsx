@@ -16,7 +16,7 @@ const MovieList: React.FC<MovieListProps> = ({ dataOfMovies }) => {
     });
   };
   return (
-    <Grid container gap={2}>
+    <Grid container spacing={2}>
       {renderMovieItems()}
     </Grid>
   );

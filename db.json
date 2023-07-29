@@ -13,6 +13,27 @@
       "name": "Oppenheimer",
       "image": "Images/Movie/2.jpg",
       "description": "Oppenheimer ist ein Film von Christopher Nolan mit Cillian Murphy, Emily Blunt. Synopsis"
+    },
+    {
+      "id": 3,
+      "type": "action",
+      "name": "The Siege of Robin Hood",
+      "image": "Images/Movie/3.jpg",
+      "description": "THE SIEGE OF ROBIN HOOD takes the legend you know in an exhilarating new direction, mixing adventure, comedy and high impact action, and even a touch of romanc"
+    },
+    {
+      "id": 4,
+      "type": "action",
+      "name": "Prisoner's Daughter ",
+      "image": "Images/Movie/4.jpg",
+      "description": "Prisoner's Daughter is a 2022 American drama film directed by Catherine Hardwicke, written by Mark Bacci, and starring Kate Beckinsale and Brian Cox"
+    },
+    {
+      "id": 5,
+      "type": "Criminal",
+      "name": "The Channel",
+      "image": "Images/Movie/5.jpg",
+      "description": "The Channel integrates Irish roots with vicious, military-like choreography in bloody action sequences, tension, and a dash of heart."
     }
   ]
 }

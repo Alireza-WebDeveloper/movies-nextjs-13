@@ -37,7 +37,7 @@ const MovieItem: React.FC<MovieItemProps> = ({ movie }) => {
       </Box>
       <CardContent>
         <Stack sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-          <Typography variant="h4" component="h1" textAlign="center">
+          <Typography variant="h5" component="h1" textAlign="center">
             {movie.name}
           </Typography>
           <Typography
@@ -48,7 +48,7 @@ const MovieItem: React.FC<MovieItemProps> = ({ movie }) => {
             type : {movie.type}
           </Typography>
           <Typography variant="body1" component="p">
-            {movie.description.slice(0, 80)}...
+            {movie.description.slice(0, 50)}...
           </Typography>
         </Stack>
       </CardContent>

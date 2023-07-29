@@ -12,7 +12,7 @@ interface GHomeProps {
 const GHome: React.FC<GHomeProps> = ({ dataOfMovies }) => {
   return (
     <Container>
-      <Grid container gap={2}>
+      <Grid container spacing={2} p={3}>
         <Grid item xs={12}>
           <SearchBar />
         </Grid>
