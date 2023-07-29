@@ -1,17 +1,24 @@
 'use client';
 import { IconButton, TextField, Box } from '@mui/material';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import * as Icons from 'react-icons/md';
 
 const SearchBar = () => {
   const [query, setQuery] = useState('');
+  const router = useRouter();
   // Update Query Search
   const updateQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
   };
   // Check Router And Push
-  const handleSubmitForm = (e: React.FormEvent) => {};
+  const handleSubmitForm = (e: React.FormEvent) => {
+    e.preventDefault();
+    router.push(`/?type=${query}`);
+    setTimeout(() => {
+      setQuery('');
+    }, 200);
+  };
   // View
   return (
     <Box
@@ -41,7 +48,7 @@ const SearchBar = () => {
               backgroundColor: 'white',
             },
           }}
-          placeholder="movie's name..."
+          placeholder="movie's type..."
           onChange={updateQuery}
           value={query}
         />
