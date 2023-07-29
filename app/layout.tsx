@@ -8,7 +8,7 @@ export default function RootLayout(props: any) {
       <body style={{ textTransform: 'capitalize' }}>
         <ThemeRegistry>
           <Header />
-          <main style={{ marginTop: '4.5rem' }}>{children}</main>
+          <main style={{ marginTop: '5rem' }}>{children}</main>
         </ThemeRegistry>
       </body>
     </html>
