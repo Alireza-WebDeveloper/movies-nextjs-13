@@ -1,0 +1,18 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "type": "action",
+      "name": "hidden strike",
+      "image": "Images/Movie/1.png",
+      "description": "Henry Van Horne Hidden Strike Amadeus Serafini Brown Leather Vest. Product Specifications: Material: Leather Internal: Viscose Lining"
+    },
+    {
+      "id": 2,
+      "type": "historical",
+      "name": "Oppenheimer",
+      "image": "Images/Movie/2.jpg",
+      "description": "Oppenheimer ist ein Film von Christopher Nolan mit Cillian Murphy, Emily Blunt. Synopsis"
+    }
+  ]
+}
