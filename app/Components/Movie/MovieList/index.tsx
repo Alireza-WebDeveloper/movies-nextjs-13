@@ -9,7 +9,7 @@ const MovieList: React.FC<MovieListProps> = ({ dataOfMovies }) => {
   const renderMovieItems = () => {
     return dataOfMovies.map((movie) => {
       return (
-        <Grid item xs={4} key={movie.id}>
+        <Grid item lg={4} md={6} xs={12} key={movie.id}>
           <MovieItem movie={movie} />
         </Grid>
       );
