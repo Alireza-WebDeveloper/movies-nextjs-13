@@ -10,7 +10,9 @@ interface PageProps {
 }
 
 const Page = async (props: PageProps) => {
+  // Type
   const type = props.searchParams.type;
+  // Condition
   if (type) {
     try {
       const movies = await asyncGetMovieByType(props.searchParams.type);
