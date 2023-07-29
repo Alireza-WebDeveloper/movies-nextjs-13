@@ -12,4 +12,15 @@ const asyncGetAllMovies = async () => {
   }
 };
 
-export { asyncGetAllMovies };
+const asyncGetMovieByType = async (type: string) => {
+  try {
+    const response = await axios.get(
+      `http://localhost:5007/movies?type=${type}`
+    );
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};
+
+export { asyncGetAllMovies, asyncGetMovieByType };
