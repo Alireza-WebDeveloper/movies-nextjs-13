@@ -3,6 +3,7 @@
 import { MovieTypeList } from '@/app/Models/Movie';
 import { Container, Grid } from '@mui/material';
 import MovieList from '../../Movie/MovieList';
+import SearchBar from '../../Searchbar';
 
 interface GHomeProps {
   dataOfMovies: MovieTypeList;
@@ -11,9 +12,9 @@ interface GHomeProps {
 const GHome: React.FC<GHomeProps> = ({ dataOfMovies }) => {
   return (
     <Container>
-      <Grid container>
+      <Grid container gap={2}>
         <Grid item xs={12}>
-          Home Page
+          <SearchBar />
         </Grid>
         <Grid item xs={12}>
           <MovieList dataOfMovies={dataOfMovies} />
