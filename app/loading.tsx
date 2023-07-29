@@ -1,4 +1,3 @@
-'use client';
 import { CircularProgress, Stack } from '@mui/material';
 const loading = () => {
   return (
